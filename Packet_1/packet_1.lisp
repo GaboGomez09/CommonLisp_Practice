@@ -88,10 +88,15 @@ i) (cdadar '( ( ( ( (1 2 3) z) y) (x 4) ) 7 8 (a b c (5 (6 7 8) ) ) ) 	 	 )
 	Salida: (4)
 ||#
 
-;;; 3)
+;;; 4)
 
 (defun Recombina (lista) 
 	(list 
 		(cons (list (rest (first lista)) (rest (second lista))) (first (first lista))) 
 		(cons (list (rest (second lista)) (rest (third lista))) (first (third lista))) 
 		(cons (list (rest (third lista)) (rest (second lista)) (rest (first lista))) (first (second lista)))))
+
+;;; 5)
+
+(defun RealNoCero? (n)
+	(and (realp n) (not (equal n 0))))
