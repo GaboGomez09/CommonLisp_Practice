@@ -100,3 +100,9 @@ i) (cdadar '( ( ( ( (1 2 3) z) y) (x 4) ) 7 8 (a b c (5 (6 7 8) ) ) ) 	 	 )
 
 (defun RealNoCero? (n)
 	(and (realp n) (not (equal n 0))))
+
+;;; 6)
+
+(defun Analiza (x)
+	(list (atom x) (numberp x) (listp x) (consp x) (and (listp x) (equalp (length x) 0))))
+
